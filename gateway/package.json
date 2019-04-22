@@ -1,0 +1,17 @@
+{
+  "name": "gateway",
+  "version": "1.0.0",
+  "description": "API Gateway",
+  "main": "index.js",
+  "author": "Julien Maitrehenry <julien@kumojin.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "(cd ../api1 && yarn start&) && (cd ../api2 && yarn start&) && cd ../gateway && node index.js"
+  },
+  "dependencies": {
+    "express": "^4.16.4",
+    "express-graphql": "^0.8.0",
+    "graphql": "^14.2.1",
+    "node-fetch": "^2.3.0"
+  }
+}
